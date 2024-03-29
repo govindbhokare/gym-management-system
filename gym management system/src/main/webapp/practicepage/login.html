@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: o;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        color: rgb(0, 0, 0);
+        border: 1px solid white;
+        width: 40%;
+        margin: 80px 155px;
+        padding: 60px 60px;
+        border-radius: 12px;
+        text-align: center;
+
+    }
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 340px;
+        padding: 8px 38px;
+        border: 2px solid black;
+        margin: 15px 93px;
+        font-size: 20px;
+        border-radius: 15px;
+    }
+    .btn{
+        margin: 10px 40px;
+        padding: 8px 40px;
+        color: gray;
+        background-color: black;
+        border: 3px solid beige;
+        border-radius: 15px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .bottumLine{
+       display: flex;
+       gap: 30%;
+       justify-content: space-around;
+    } 
+    
+</style>
+<body>
+    <div class="main">
+        <div class="container">
+            <h1>Login</h1>
+            <form action="#">
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="password" required>
+                </div>
+
+                <button class="btn">Login</button>
+            </form>
+            <div class="bottumLine">
+                <div class="rememberMe">
+                    <input type="checkbox">
+                    <label for="bxid_rememberMe_true" data-uia="label+bxid_rememberMe">
+                        <span class="login-remember-me-lebal-text">Remember me</span>
+                    </label>
+                </div>
+                <div class="needHelp">
+                    <a class="login-help-link link" target="_self" href="//LoginHelp">Need help?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

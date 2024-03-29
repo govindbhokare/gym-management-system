@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment-Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+            text-transform: capitalize;
+            transition: all 0.2s linear;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 25px;
+            background: transparent;
+
+        }
+
+        .container form {
+            width: 700px;
+            padding: 20px;
+        }
+
+        .container form .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .container form .row .col {
+            flex: 1 1 250px;
+        }
+
+        .col .title {
+            display: flex;
+            justify-content: center;
+            font-size: 40px;
+            color: rgb(8, 8, 8);
+            padding-bottom: 5px;
+        }
+
+        .col .inputBox {
+            margin: 15px 0;
+        }
+
+        .col .inputBox label {
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .col .inputBox input,
+        .col .inputBox select {
+            width: 100%;
+            border: 1px solid #ccc;
+            padding: 10px 15px;
+            font-size: 15px;
+        }
+
+        .col .inputBox input:focus,
+        .col .inputBox select:focus {
+            border: 1px solid #000
+        }
+
+        .col .flex {
+            display: flex;
+            gap: 15px;
+        }
+
+        .col .flex .inputBox {
+            flex: 1 1;
+            margin-top: 5px;
+        }
+
+        .col .inputBox img {
+            height: 34px;
+            margin-top: 5px;
+            filter: drop-shadow(0 0 1px #000);
+        }
+        form .flex {
+            display: flex;
+            gap: 15px;
+        }
+        form .flex .inputBox{
+            flex: 1 1;
+            margin-top: 5px;
+        }
+        .container form .submit_btn,
+        .cancel_btn {
+            width: 100%;
+            padding: 12px;
+            font-size: 17px;
+            color: #000000;
+            margin-top: 5px;
+            cursor: pointer;
+            letter-spacing: 1px;
+        }
+
+        .container form .submit_btn:hover {
+            background: #5bc900;
+        }
+        .container form .cancel_btn:hover {
+            background: #5bc900;
+        }
+
+        input::-webkit-inner-spin-button,
+        input::-webkit-outer-spin-button {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <form action="#">
+
+            <div class="row">
+
+                <div class="col">
+                    <h3 class="title">Payment Method</h3>
+
+                    <div class="inputBox">
+                        <label for="name">
+                            <!-- Card Accepted: -->
+                        </label>
+                        <img src="icons8-credit-card-contactless-64.png" alt="credit/debit card image">
+                        <img src="icons8-magnetic-card-48.png" alt="credit/debit card image">
+                        <img src="icons8-credit-control-48.png" alt="credit/debit card image">
+                        <img src="icons8-credit-card-48.png" alt="credit/debit card image">
+
+                    </div>
+
+
+                    <div class="inputBox">
+                        <label for="cardName">
+                            Enter Your Id:
+                        </label>
+                        <input type="number" id="cardName" placeholder="Enter your id" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="cardName">
+                            Enter Your Name:
+                        </label>
+                        <input type="text" id="cardName" placeholder="Enter your name on card" required>
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <label for="">Amount:</label>
+                            <input type="number text" id="" placeholder="Amount" required>
+                        </div>
+
+                        <div class="inputBox">
+                            <label for="">Validity:</label>
+                            <input type="number text" id="" placeholder="Validity" required>
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <label for="cardNum">
+                            Select your new plan:
+                        </label>
+                        <input type="number text" id="cardNum" placeholder="plan" maxlength="" required>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="flex">
+                <div class="inputBox">
+                    <input type="button" value="Submit" class="submit_btn">
+                </div>
+                <div class="inputBox">
+                    <input type="button" value="Cancel" class="cancel_btn">
+                </div>
+            </div>
+
+            
+        </form>
+
+    </div>
+    <!-- <script type="text/javascript" src="index.js"></script> -->
+</body>
+
+</html>

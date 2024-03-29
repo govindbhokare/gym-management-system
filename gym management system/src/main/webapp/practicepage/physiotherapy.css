@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'poppins','sans-serif';
+}
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+/* ################### NAVBAR STYLING ####################### */
+
+/* for desktop mode */
+.navbar input[type='checkbox'],
+.navbar .hamburger-lines{
+    display: none;
+}
+
+.navbar{
+    box-shadow: 0px 5px 10px 0px rgb(129, 125, 125);
+    position: fixed;
+    width: 100%;
+    background: white;
+    color: black;
+    opacity: 0.80;
+    z-index: 999;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+.menu-items{
+    order: 2;
+    display: flex;
+}
+
+.logo-container{
+    order: 1;
+    /* font-size: 3rem; */
+    height: 65px;
+    width: 112px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+.logo{
+    width: 100%;
+    height: 50px;
+    background-image: url('gym.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    
+}
+.menu-items li{
+    list-style: none;
+    margin-left: 1.5rem;
+    font-size: 1.8rem;
+}
+.navbar a{
+    color: rgb(117, 113, 113);
+    text-decoration:none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover{
+    color: rgb(188, 237, 115);
+}
+
+/* ####################Showcase styling######################### */
+.showcase-area{
+    height: 70vh;
+    background: linear-gradient(rgba(56, 54, 54, 0.144),rgba(235, 230, 230,0.336)), url('13.jpg');
+    background-size: cover;
+    background-position:start;
+    background-repeat: no-repeat;
+    /* color: white; */
+}
+
+.showcase-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    font-size: 4.8rem;
+}
+
+.main-title, h1{
+    text-transform: uppercase;
+}
+.small,p{
+    font-size: 2rem;
+}
+.btn{
+    display: inline-block;
+    padding: 1em 2.5em;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 1em;
+    text-transform: uppercase;
+    font-weight:500;
+    
+}
+.btn-primary{
+    color: rgb(29, 30, 31);
+    background-color: rgb(155, 204, 107);
+    font-size: 1.3rem;
+}
+
+#physiotherapy{
+    padding: 5rem 0 10rem 0;
+}
+#physiotherapy h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: rgb(74, 74, 74);
+}
+.video-container{
+    display: flex;
+    justify-content: space-between;
+}
+.video-title h3{
+    /* color: rgb(255, 245, 245); */
+    font-size: 2rem;
+}
+.gym-container{
+    display: flex;
+}
+.video-title h3{
+    justify-content: center;
+}

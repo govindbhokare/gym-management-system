@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration-Form</title>
+    <link rel="stylesheet" href="registraion.css">
+    </head>
+<body>
+    <div class="container">
+        <form action="/gym_management_system/gym" method="post">
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">Registration-Form</h3>
+
+                    <div class="inputBox">
+                        <label for="cardName">
+                            Enter Your Name:
+                        </label>
+                        <input type="text" id="cardName" name=uname placeholder="Enter your name" required>
+                    </div>
+        
+                    
+                    <div class="inputBox">
+                        <label for="cardName">
+                            Enter Your E-mail:
+                        </label>
+                        <input type="text" id="cardName" name=email placeholder="Enter your e-mail" required>
+                    </div>
+                    
+                    <div class="inputBox">
+                        <label for="cardName">
+                            Enter Your Contact No:
+                        </label>
+                        <input type="text" id="cardName" name=contact placeholder="Enter your Contact no" required>
+                    </div>
+                    
+                    <div class="inputBox">
+                        <label for="cardName">
+                            Enter Your Plan:
+                        </label>
+                        <input type="text" id="cardName" name=plan placeholder="Enter your plan" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="cardName">
+                            Enter Your Address:
+                        </label>
+                        <input type="text" id="cardName" name=address placeholder="Enter your address" required>
+                    </div>
+                    <div class="flex">
+                        <div class="inputBox">
+                            <label for="">Age:</label>
+                            <input type="number" id="" name=age placeholder="Age" required>
+                        </div>
+
+                        <div class="inputBox">
+                            <label for="">gender:</label>
+                            <select name="gender" id="">
+                                <option value="">gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="other">other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="inputBox">
+                            <label for="cardName">Enter Your DOB:</label>
+                            <input type="date" id="date" name=dates placeholder="Enter your dob" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="cardName">Enter Your Joining Date:</label>
+                            <input type="date" name=datej id="date" placeholder="DD-MM-YYYY" required>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="flex">
+                <div class="inputBox">
+                    <input type="submit" value="Submit" class="submit_btn">
+                </div>
+                <div class="inputBox">
+                    <a href="">
+                        <input type="reset" value="Cancel" class="cancel_btn">
+                    </a>
+                </div>
+            </div>
+            <div class="inputBox">
+                <a href="/gym_management_system//loginPage//login.html">
+                    <input type="button" value="Already have an account" class="login_btn">
+                </a>
+            </div>
+
+        </form>
+    </div>
+    <script></script>
+</body>
+
+</html>

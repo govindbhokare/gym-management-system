@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+            text-transform: capitalize;
+            transition: all 0.2s linear;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #4c4b4b;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 25px;
+            background: transparent;
+
+        }
+        .container form{
+            width: 700px;
+            padding: 20px;
+        }
+        .container form .row{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .container form .row .col{
+            flex: 1 1 250px;
+        }
+        .col .title{
+            display: flex;
+            justify-content: center;
+            font-size: 40px;
+            color: rgb(8, 8, 8);
+            padding-bottom: 5px;
+        }
+        .col .inputBox{
+            margin: 15px 0;
+        }
+        .col .inputBox label{
+            margin-bottom: 10px;
+            display: block;
+        }
+        .col .inputBox input{
+            width: 100%;
+            border: 1px solid #ccc;
+            padding: 10px 15px;
+            font-size: 15px;
+        }
+        .col .inputBox input:focus{
+            border: 1px solid #000;
+        }
+        .container form .submit_btn,
+        .cancel_btn{
+            width: 100%;
+            padding: 12px;
+            font-size: 17px;
+            color: #151414;
+            margin-top: 5px;
+            cursor: pointer;
+            letter-spacing: 1px;
+        }
+        .container form .submit_btn:hover{
+            background: #5bc900;
+        }
+        .container form .cancel_btn:hover{
+            background: #5bc900;
+        }
+        input::-webkit-inner-spin-button,
+        input::-webkit-outer-spin-button{
+            display: none;
+        }
+        #date{
+            text-transform:uppercase ;
+        }
+        .col .flex {
+            display: flex;
+            gap: 15px;
+        }
+        form .flex {
+            display: flex;
+            gap: 15px;
+        }
+        form .flex .inputBox{
+            flex: 1 1;
+            margin-top: 5px;
+        }
+        .col .flex .inputBox {
+            flex: 1 1;
+            margin-top: 5px;
+        }
+        .col .inputBox input,
+        .col .inputBox select {
+            width: 100%;
+            border: 1px solid #ccc;
+            padding: 10px 15px;
+            font-size: 15px;
+        }
+
+        .col .inputBox input:focus,
+        .col .inputBox select:focus {
+            border: 1px solid #000
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">Registration-Form</h3>
+
+                    <div class="inputBox">
+                        <label for="cardName">
+                            user id:
+                        </label>
+                        <input type="text" id="cardName" placeholder="user id" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="cardName">
+                            Enter Your Name:
+                        </label>
+                        <input type="text" id="cardName" placeholder="Enter your name" required>
+                    </div>
+                    <div class="inputBox">
+                        <label for="cardName">
+                            Enter Your E-mail:
+                        </label>
+                        <input type="text" id="cardName" placeholder="Enter your e-mail" required>
+                    </div>
+                    <div class="flex">
+                        <div class="inputBox">
+                            <label for="cardName">
+                                Enter Your Contact No:
+                            </label>
+                            <input type="text" id="cardName" placeholder="Enter your Contact no" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="cardName">
+                                Enter Your Gender:
+                            </label>
+                            <input type="text" id="cardName" placeholder="Enter your gender" required>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="inputBox">
+                            <label for="cardName">
+                                Date of Birth:
+                            </label>
+                            <input type="text" id="cardName" placeholder="date of birth" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="cardName">
+                                Joining date:
+                            </label>
+                            <input type="text" id="cardName" placeholder="Joining date" required>
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <label for="cardName">
+                            street name:
+                        </label>
+                        <input type="text" id="cardName" placeholder="street name" required>
+                    </div>
+                    <div class="flex">
+                        <div class="inputBox">
+                            <label for="cardName">
+                                city:
+                            </label>
+                            <input type="text" id="cardName" placeholder="city" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="cardName">
+                                state:
+                            </label>
+                            <input type="text" id="cardName" placeholder="state" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="cardName">
+                                ZipCode:
+                            </label>
+                            <input type="text" id="cardName" placeholder="ZipCode" required>
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <label for="cardName">
+                            Calorie:
+                        </label>
+                        <input type="text" id="cardName" placeholder="Calorie" required>
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <label for="cardName">
+                                height:
+                            </label>
+                            <input type="text" id="cardName" placeholder="height" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="cardName">
+                                weight:
+                            </label>
+                            <input type="text" id="cardName" placeholder="weight" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="cardName">
+                                fat:
+                            </label>
+                            <input type="text" id="cardName" placeholder="fat" required>
+                        </div>
+                    </div>
+                    <div class="inputBox">
+                        <label for="cardName">
+                            plan name:
+                        </label>
+                        <input type="text" id="cardName" placeholder="plan name" required>
+                    </div>
+                    <div class="flex">
+                        <div class="inputBox">
+                            <label for="cardName">
+                                plan amount:
+                            </label>
+                            <input type="text" id="cardName" placeholder="plan amount" required>
+                        </div>
+                        <div class="inputBox">
+                            <label for="cardName">
+                                plan validity:
+                            </label>
+                            <input type="text" id="cardName" placeholder="plan validity" required>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="flex">
+                <div class="inputBox">
+                    <input type="button" value="Submit" class="submit_btn">
+                </div>
+                <div class="inputBox">
+                    <input type="button" value="Cancel" class="cancel_btn">
+                </div>
+            </div>
+            <!-- <input type="submit" value="Submit" class="submit_btn">
+            <input type="submit" value="Cancel" class="cancel_btn"> -->
+
+        </form>
+    </div>
+</body>
+</html>
